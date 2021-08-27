@@ -1,0 +1,32 @@
+{
+    "name": "permacrunch/base",
+    "description": "A collection of permaculture entities",
+    "type": "laravel-package",
+    "require": {
+        "laravel/framework": "^8.0",
+        "spatie/laravel-sluggable": "^2.6",
+        "spatie/laravel-medialibrary": "^9.7",
+        "spatie/laravel-tags": "^3.1",
+        "spatie/laravel-feed": "^3.2" 
+    },
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Olav Schettler",
+            "email": "olav@schettler.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Permacrunch\\Base\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Permacrunch\\Base\\ServiceProvider"
+            ]
+        }
+    }
+}
